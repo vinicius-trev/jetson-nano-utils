@@ -1,2 +1,11 @@
-# jetson-nano-utils
-Utilities for the Nvidia Jetson Nano
+# Jetson Nano
+
+This repository contain instruction on how to install some tools on the Nvidia Jetson Nano 4GB board.
+It includes:
+* JETPACK Installation
+* jetson-stats
+* darknet-yolo (AlexeyAB)
+* AC9260 WiFi board
+* OpenCV compiled with CUDA
+* CSI Camera
+* Troubleshooting
