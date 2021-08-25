@@ -1,6 +1,7 @@
 # Jetson Nano
 
-This repository contain instruction on how to install some tools on the Nvidia Jetson Nano 4GB board.
+This repository contains instructions on how to install some tools on the Nvidia Jetson Nano 4GB board.
+
 It includes:
 * JETPACK Installation
 * jetson-stats
