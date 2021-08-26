@@ -2,7 +2,7 @@
 
 This repository contains instructions on how to install some tools on the Nvidia Jetson Nano 4GB board.
 
-It includes:
+It includes instruction on how-to:
 * JETPACK Installation
 * jetson-stats
 * darknet-yolo (AlexeyAB)
@@ -10,3 +10,5 @@ It includes:
 * OpenCV compiled with CUDA
 * CSI Camera
 * Troubleshooting
+
+It also includes some usefull python scrips on `scripts` folder
