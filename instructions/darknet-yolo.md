@@ -1,15 +1,15 @@
 # Darknet YOLO - AlexeyAB
 
-Implementação do YOLO v4 em C segundo o paper original com wrapper / API em python.
+YOLO v4 implementation in C, as defined on the original paper with a wrapper / API in python.
 
-* Para Instalar:
-    * (1) Realizar o download do código fonte
+* How to Install:
+    * (1) Download source code
     ```
     git clone https://github.com/AlexeyAB/darknet.git
     cd darknet
     ```
 
-    * (2) Editar Makefile
+    * (2) Modify the Makefile
     ```
     GPU=1
     CUDNN=1
@@ -29,17 +29,17 @@ Implementação do YOLO v4 em C segundo o paper original com wrapper / API em py
     ARCH= -gencode arch=compute_53,code=[sm_53,compute_53]
     ```
 
-  * (3) Realizar o build do executavel
+  * (3) Build the darknet executable
     ```
     make -j4
     ```
     
-   * (4) Download dos pesos pré-treinados em https://github.com/AlexeyAB/darknet/releases/tag/darknet_yolo_v4_pre
+   * (4) Download pre trained weights on https://github.com/AlexeyAB/darknet/releases/tag/darknet_yolo_v4_pre
    
-* Para executar os exemplos seguir o tutorial: https://github.com/AlexeyAB/darknet#how-to-use-on-the-command-line
-* Para executar com a Pi Camera conectada ao conector CSI, utilizar o gstreamer, substituindo o argumento `-c 0`  por `nvarguscamerasrc ! video/x-raw(memory:NVMM),width=640, height=360, framerate=30/1, format=NV12 ! nvvidconv ! video/x-raw, format=BGRx, width=640, height=360 ! videoconvert ! video/x-raw, format=BGR ! appsink`
+* To execute the examples, follow the commands on: https://github.com/AlexeyAB/darknet#how-to-use-on-the-command-line
+* To execute using the Pi Camera, replace the `-c 0` argument with a GStreamer pipeline `nvarguscamerasrc ! video/x-raw(memory:NVMM),width=640, height=360, framerate=30/1, format=NV12 ! nvvidconv ! video/x-raw, format=BGRx, width=640, height=360 ! videoconvert ! video/x-raw, format=BGR ! appsink`
 
-  Exemplos:
+  Examples:
   ```
   # YOLO-V4 (COCO)
   ./darknet detector demo cfg/coco.data cfg/yolov4.cfg weights/yolov4.weights "nvarguscamerasrc ! video/x-raw(memory:NVMM),width=640, height=360, framerate=30/1, format=NV12 ! nvvidconv ! video/x-raw, format=BGRx, width=640, height=360 ! videoconvert ! video/x-raw, format=BGR ! appsink" -dont_show
@@ -48,11 +48,11 @@ Implementação do YOLO v4 em C segundo o paper original com wrapper / API em py
   ./darknet detector demo cfg/coco.data cfg/yolov4-tiny.cfg weights/yolov4-tiny.weights "nvarguscamerasrc ! video/x-raw(memory:NVMM),width=640, height=360, framerate=30/1, format=NV12 ! nvvidconv ! video/x-raw, format=BGRx, width=640, height=360 ! videoconvert ! video/x-raw, format=BGR ! appsink" -dont_show
   ```
   
-* Exemplos do uso do YOLO Darknet com wrapper em python
+* C API Examples showing how to use darknet on python
     * https://github.com/AlexeyAB/darknet/blob/master/darknet.py
     * https://github.com/AlexeyAB/darknet/blob/master/darknet_video.py
 
-Fontes: \
+Sources: \
 https://jkjung-avt.github.io/yolov4/ \
 https://github.com/AlexeyAB/darknet
 
