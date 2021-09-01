@@ -6,7 +6,7 @@ It includes instruction on how-to:
 * JETPACK Installation
 * jetson-stats
 * darknet-yolo (AlexeyAB)
-* AC9260 WiFi board
+* AC9260 WiFi and Bluetooth board
 * OpenCV compiled with CUDA
 * CSI Camera
 * Terminator and ZSH
