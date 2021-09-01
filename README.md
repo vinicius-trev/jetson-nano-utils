@@ -9,6 +9,7 @@ It includes instruction on how-to:
 * AC9260 WiFi board
 * OpenCV compiled with CUDA
 * CSI Camera
+* Terminator and ZSH
 * Troubleshooting
 
 It also includes some usefull python scrips on `scripts` folder
