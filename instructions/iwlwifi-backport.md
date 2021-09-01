@@ -7,7 +7,7 @@ It make available the usage of the Wi-Fi PCI-e AC9260 M.2. board on the Jetson N
 git clone https://git.kernel.org/pub/scm/linux/kernel/git/iwlwifi/backport-iwlwifi.git
 cd backport-iwlwifi
 git checkout release/core52
-make defconfig-iwlwifi-public
+sudo make defconfig-iwlwifi-public
 make -j4
 sudo make install
 ```
