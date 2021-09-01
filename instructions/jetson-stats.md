@@ -1,30 +1,30 @@
 # Jetson-Stats
 
-Ferramenta para gerenciar e analisar o uso de recursos da Jetson de maneira intuitiva e simples
+Tool used to manage and analyse the usage of the Jetson Nano resources
 
-- Para Instalar
+- How to Install
 ```
 sudo apt install -y python3-pip
 sudo -H pip3 install -U jetson-stats
 ```
 
-- Para usar:
+- How to Use:
 ```
 jtop
 ```
 
 ## Walkthrough
 
-Existem 6 menus inferiores
+There are 6 menus on the bottom bar
 
-- (1) Informações Gerais… CPU, RAM, GPU, Energia, Temperatura, modo de operação, etc;
-- (2) Estatisticas somente da GPU;
-- (3) Estatisticas somenta da CPU;
-- (4) Estatisticas do uso de memória RAM/Swap
-    - Aqui é possível aumentar o tamanho do SWAP na parte inferior da tela, acrescentando 2GB, totalizando 4GB (destacado em vermelho)
+- (1) General info… CPU, RAM, GPU, Energy Consumption, Temperature, Operation Mode, etc;
+- (2) GPU statistics;
+- (3) CPU statistics;
+- (4) RAM/SWAP statistics
+    - Here, we can increase SWAP size if necessary, as shown on the image below
     
-    ![](images/jtop-swap.png)
-- (5) Controle dos modos de operação da Jetson e FAN;
-- (6) Informações dos módulos instalados e suas versões, dispositivos de rede, etc.
+    ![](../images/jtop-swap.png)
+- (5) Change and control Jetson FAN and operation modes;
+- (6) Modules and system versions, compatibility, etc.
 
-Fonte: https://github.com/rbonghi/jetson_stats
+Source: https://github.com/rbonghi/jetson_stats
