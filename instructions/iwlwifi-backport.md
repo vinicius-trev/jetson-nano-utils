@@ -19,4 +19,14 @@ Notes:
   git clone git://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git
   sudo cp linux-firmware/iwlwifi-9260* /lib/firmware/
   ```
-Source: https://forums.developer.nvidia.com/t/intel-ac9260-wifi-card-stops-working-after-upgrade-to-jetpack-4-5/167892
+  
+  Source: https://forums.developer.nvidia.com/t/intel-ac9260-wifi-card-stops-working-after-upgrade-to-jetpack-4-5/167892
+
+* To Enable Bluetooth
+```
+git clone https://github.com/yoffy/jetson-nano-kernel.git
+./download-kernel.sh
+./install-btusb.sh
+```
+
+Source: https://github.com/yoffy/jetson-nano-kernel
