@@ -1,8 +1,8 @@
 # OpenCV 4.5.0 with CUDA
 
-Adiciona suporte ao CUDA pelo OpenCV utilizado na Jetson Nano. É essencial para mesclar a operação da câmera CSI com softwares que utilizam o CUDA (como o YOLO, por exemplo)
+Add support to CUDA on Jetson Nano OpenCV. It is essential to use OpenCV with GPU acceleration
 
-Para Instalar:
+How to Install:
 
 ```
   mkdir openCV && cd openCV
@@ -11,9 +11,9 @@ Para Instalar:
   ./install_opencv4.5.0_Jetson.sh
 ```
 
-Observações:
-O processo demora aproximadamente 4 horas para completar realizando a compilação na própria Jetson
-A versão do OpenCV pode ser alterada no script, porem não é garantido que funcionará
-É recomendado que o Swapfile da Jetson seja de no mínimo 4GB (explicado como aumentá-lo no uso da ferramenta jtop )
+Notes:
+The compilation takes aproximately 4h to complete using the Jetson Nano
+The OpenCV version can be changed on the script, but it is not guaranteed that it will work
+It is recommended to increase the Jetson Swapfile to at least 4GB (see jetson-stats)
 
-Fonte: https://forums.developer.nvidia.com/t/unable-to-install-opencv-with-cuda-in-jetson-nano/72994#5337084
+Source: https://forums.developer.nvidia.com/t/unable-to-install-opencv-with-cuda-in-jetson-nano/72994#5337084
