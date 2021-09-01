@@ -1,8 +1,8 @@
-# Módulo backport-iwlwifi
+# backport-iwlwifi Kernel Module
 
-Possui o objetivo de viabilizar o uso da placa PCI-e Wi-Fi AC9260 da intel na Jetson Nano no slot M.2. existente abaixo do módulo. Consiste de um módulo de Kernel
+It make available the usage of the Wi-Fi PCI-e AC9260 M.2. board on the Jetson Nano
 
-* Para Instalar:
+* How to Install:
 ```
 git clone https://git.kernel.org/pub/scm/linux/kernel/git/iwlwifi/backport-iwlwifi.git
 cd backport-iwlwifi
@@ -12,11 +12,11 @@ make -j4
 sudo make install
 ```
 
-Observações:
-- É necessário a release estar na versão core52, diferente disso, o driver não funcionará
-- Os arquivos para o device driver do dispositivo AC9260 já devem existir no sistema em /lib/firmare/iwlwifi-9260* , caso não existirem é necessário a inserção:
+Notes:
+- It is necessary to use the core52 release, on a different version the driver will not work
+- The Jetson must have the AC9260 device driver files on `/lib/firmare/iwlwifi-9260*`. If the files doesn't exist, download at the ling below and move to the specified previous location
   ```
   git clone git://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git
   sudo cp linux-firmware/iwlwifi-9260* /lib/firmware/
   ```
-Fonte: https://forums.developer.nvidia.com/t/intel-ac9260-wifi-card-stops-working-after-upgrade-to-jetpack-4-5/167892
+Source: https://forums.developer.nvidia.com/t/intel-ac9260-wifi-card-stops-working-after-upgrade-to-jetpack-4-5/167892
