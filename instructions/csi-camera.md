@@ -1,12 +1,12 @@
 # CSI Camera
 
-Utilizado para testar a Pi Camera conectada ao slot CSI na Jetson Nano utilizando o GStreamer
+Used to test a Pi Camera connected to the CSI slot on the Jetson Nano using GStreamer pipelines
 
-* Para Instalar:
+* How to Install:
 ```
 git clone https://github.com/JetsonHacksNano/CSI-Camera.git
 cd CSI-Camera
 python simple_camera.py
 ```
 
-Fonte: https://github.com/JetsonHacksNano/CSI-Camera
+Source: https://github.com/JetsonHacksNano/CSI-Camera
