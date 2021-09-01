@@ -1,17 +1,17 @@
 # Troubleshooting
 
-Podem ocorrer alguns erros durante a compilação do OpenCV com suporte ao CUDA e do YOLO em C. São eles:
+During OpenCV compilation with CUDA support or AlexeyAB YOLO, some erros can pop-up:
 
-* Caso ocorrer erro de compilação do OpenCV com suporte ao CUDA, em que o NVCC não foi encontrado, adicionar ao final do ~/.bashrc:
+* If the error is related with the OpenCV compilation, saying that NVCC was not found, add the lines below to the `~/.bashrc` file:
 ```
 # CUDA NVCC
 export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
 ```
 
-Fonte: https://forums.developer.nvidia.com/t/cuda-nvcc-not-found/118068
+Source: https://forums.developer.nvidia.com/t/cuda-nvcc-not-found/118068
 
-* Caso ocorrer erro de execução do YOLO Darknet indicando que as bibliotecas do OpenCV não foram encontradas, adicionar ao final do ~/.bashrc:
+* If the error is related with the Darknet YOLO compilation, saying that some OpenCV libraries can't be found, add those lines to the `~/.bashrc` file:
 ```
 # OpenCV
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
