@@ -2,7 +2,7 @@
 @author Vinicius Trevisan
 @brief Python script to record video stream from CSI Camera on NVidia Jetson Nano
 @details
-* Available modes (based on Raspberry Pi Camera v3): These modes are used to define the recommended bitrate
+* Available modes (based on Raspberry Pi Camera v2): These modes are used to define the recommended bitrate
   * 0: 1280 x 720 @ 60 FPS
   * 1: 1280 x 720 @ 30 FPS
   * 2: 1640 x 1232 @ 30 FPS
