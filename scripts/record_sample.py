@@ -9,7 +9,7 @@
   * 3: 1920 x 1080 @ 30 FPS
   * 4: 3280 x 2464 @ 15 FPS
 
-* Available flip modes (based on Pi Camera flat main flat cable / white pointing UP):
+* Available flip modes (based on Pi Camera main flat cable / white connector pointing UP):
   * 0: Normal
   * 1: Rotated left 90 degrees
   * 2: Rotated 180 degrees
