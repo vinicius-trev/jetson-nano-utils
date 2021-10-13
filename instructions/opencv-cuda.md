@@ -8,6 +8,7 @@ How to Install:
 mkdir openCV && cd openCV
 wget -O install_opencv4.1.1_Jetson.sh https://raw.githubusercontent.com/AastaNV/JEP/master/script/install_opencv4.5.0_Jetson.sh
 chmod +x install_opencv4.1.1_Jetson.sh
+sed -i 's/4.5.0/4.1.1/g' install_opencv4.1.1_Jetson.sh
 sed -i 's/cmake -D/cmake -D ENABLE_PRECOMPILED_HEADERS=OFF -D/g' install_opencv4.1.1_Jetson.sh
 ./install_opencv4.1.1_Jetson.sh
 ```
