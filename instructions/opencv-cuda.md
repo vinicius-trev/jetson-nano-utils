@@ -1,4 +1,4 @@
-# OpenCV 4.5.0 with CUDA
+# OpenCV 4.1.1 with CUDA
 
 Add support to CUDA on Jetson Nano OpenCV. It is essential to use OpenCV with GPU acceleration
 
